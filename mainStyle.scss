@@ -1,0 +1,234 @@
+.mainMenu{
+    width:300px;
+    height:500px;
+    background-color: rgb(51, 48, 48);
+    border:1px solid white;
+    position: absolute;
+    top:30px;
+    left:30px;
+    color:white;
+    -webkit-box-shadow: 0px 4px 15px 5px rgba(0,0,0,0.6); 
+    box-shadow: 0px 4px 15px 5px rgba(0,0,0,0.6);
+
+    
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .menuNav{
+        width:300px;
+        height:50px;
+        float:left;
+
+        .addNote{
+            width:50px;
+            height: 50px;
+            float:left;
+
+            .px{
+                border-bottom:1px solid white;
+                width:20px;
+                height:1px;
+                position: relative;
+                left:15px;
+                top:25px;
+            }
+            .py{
+                border-left:1px solid white;
+                width:1px;
+                height:20px;
+                position: relative;
+                left:25px;
+                top:15px;
+            }
+        }
+        .addNote:hover{
+            background-color: rgb(92, 90, 90);
+        }
+        .moveMenu{
+            width:250px;
+            height:50px;
+            float:left;
+        }
+    }
+    .appName{
+        width:290px;
+        margin-left:10px;
+        height:50px;
+        float:left;
+        font-size:30px;
+    }
+    .searchBar{
+        background-color: rgb(65, 62, 62);
+        width:280px;
+        height:40px;
+        float:left;
+        margin-left:10px;
+        .search{
+            height:40px;
+            width:240px;
+            float:left;
+
+            .searchInput{
+                height:40px;
+                width:240px;
+                background-color: rgb(65, 62, 62);
+                box-sizing: border-box;
+                border:none;
+                color:white;
+                padding-left:10px;
+                font-size:15px;
+            }
+            .searchInput::placeholder{
+                color: rgb(182, 182, 182);
+            }
+            .searchInput:focus{
+                outline:none;
+            }
+            .searchInput:focus::placeholder{
+                color: rgb(133, 133, 133);
+            }
+        }
+        .searchBtn{
+            height:40px;
+            width:40px;
+            float:left;
+        }
+        .searchBtn:hover{
+            background-color: rgb(92, 90, 90);
+        }
+    }
+    .contents{
+        width:300px;
+        min-height:50px;
+        float:left;
+        padding-top: 10px;
+
+
+        .noteMain{
+            width:260px;
+            margin-left:10px;
+            background-color: rgb(65, 62, 62);
+            min-height:60px;
+            position: relative;
+            float:left;
+            border-radius: 3px;
+            border-top: 4px solid pink;
+            padding-left:10px;
+            padding-right:10px;
+            padding-bottom:10px;
+            margin-bottom: 10px;
+
+            .noteMainTimeContainer{
+                width:30px;
+                height:15px;
+                color:pink;
+                font-size:10px;
+                text-align: center;
+                padding-top:5px;
+                float:right;
+                visibility: visible;
+                
+            }
+            .hideTime{
+                width:30px;
+                height:15px;
+                color:pink;
+                font-size:10px;
+                text-align: center;
+                padding-top:5px;
+                position: absolute;
+                right:10px;
+                top:0px;
+                visibility: hidden;
+                cursor: pointer;
+            }
+            .noteMainContent{
+                width:100%;
+                float:right;
+                min-height:40px;
+                max-height:90px;
+                white-space: pre-line;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                overflow: hidden;
+
+            }
+        }
+    }
+}
+
+.mainMenu::-webkit-scrollbar{
+    width:3px;
+}
+.mainMenu::-webkit-scrollbar-track{
+    border-radius:3px;
+}
+.mainMenu::-webkit-scrollbar-thumb{
+    background: silver;
+    border-radius: 3px;;
+}
+.mainMenu::-webkit-scrollbar-thumb:hover{
+    background: rgb(139, 139, 139);
+}
+
+
+.noteInput::-webkit-scrollbar{
+    width:3px;
+}
+.noteInput::-webkit-scrollbar-track{
+    border-radius:3px;
+}
+.noteInput::-webkit-scrollbar-thumb{
+    background: silver;
+    border-radius: 3px;;
+}
+.noteInput::-webkit-scrollbar-thumb:hover{
+    background: rgb(139, 139, 139);
+}
+
+
+
+.note{
+    width:300px;
+    height:300px;
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    -webkit-box-shadow: 0px 4px 15px 5px rgba(0,0,0,0.6); 
+    box-shadow: 0px 4px 15px 5px rgba(0,0,0,0.6);
+    border: 1px solid white;
+    z-index: 10;
+    
+
+    .noteNav{
+        width: 300px;
+        height:40px;
+        background-color: aqua;
+        position: relative;
+        top:0px;
+        left:0px;
+
+
+        
+    }
+    .noteInput{
+        width:300px;
+        height:260px;
+        box-sizing: border-box;
+        resize:none;
+        border:none;
+        background-color: rgb(68, 68, 68);
+        color:white;
+        padding:10px;
+        font-size: 15px;
+        
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .noteInput::placeholder{
+        color:rgb(163, 163, 163);
+    }
+    .noteInput:focus{
+        outline:none;
+    }
+}
